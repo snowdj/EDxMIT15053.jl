@@ -1,5 +1,7 @@
 using JuMP, Combinatorics
 
+# Just usable for toy arrays, say length(v) < 11, otherwise will run out of memory
+
 function minimize_set_diff(v::Array{Int})
   N = length(v)
   local d = sum(v)
